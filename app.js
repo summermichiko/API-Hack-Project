@@ -16,12 +16,11 @@ $(document).ready(function() {
 			type: "GET",
 			dataType: "jsonp",
 			cache: false,
-			url: instagram.apiHost + "/v1/tags/" + tag + "/media/recent/?client_id=" + instagram.clientID + "&count=3",
+			url: instagram.apiHost + "/v1/tags/" + tag + "/media/recent/?client_id=" + instagram.clientID + "&count=10",
 			data: {"client_id": instagram.clientID, "max_tag_id": min},
 			success: function(pic) {
 				min = pic.pagination.next_max_tag_id;
 				url = pic.pagination.next_url;
-				//$('.button').addClass("active");
 				for (var i = 0; i < pic.data.length; i++) { // data is the array we get back
 					likes = pic.data[i].likes.count; //the number of likes for that picture (likes and count is from instagram)
 					console.log(likes);
@@ -51,6 +50,20 @@ $(document).ready(function() {
 	$("input").keyup(function() {
 		clearTimeout(timerId);
 		timerId = setTimeout(function() {loadInstagramPhotos(); }, 500);
+	});
+
+	var fixedMainMenu = $("#container").offset().top;
+	var fixedMenu = function() {
+		var scrollTop = $(window).scrollTop();
+
+		if (scrollTop > fixedMainMenu) {
+			$("#button_section").addClass("fixed");
+		} else {
+			$("#button_section").removeClass("fixed");
+		}
+	}; 
+	$(window).scroll(function() {
+		fixedMenu();
 	});
 
 });
