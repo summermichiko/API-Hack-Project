@@ -51,21 +51,6 @@ $(document).ready(function() {
 		clearTimeout(timerId);
 		timerId = setTimeout(function() {loadInstagramPhotos(); }, 500);
 	});
-
-	var fixedMainMenu = $("#container").offset().top;
-	var fixedMenu = function() {
-		var scrollTop = $(window).scrollTop();
-
-		if (scrollTop > fixedMainMenu) {
-			$("#button_section").addClass("fixed");
-		} else {
-			$("#button_section").removeClass("fixed");
-		}
-	}; 
-	$(window).scroll(function() {
-		fixedMenu();
-	});
-
 });
 
 

@@ -86,11 +86,17 @@ input {
 
 #button_section {
 	display: inline;
-	position: absolute;
+	position: fixed;
 	float: left;
 	margin-left: 120px;
-	background-color: green;
+}
 
+#button_section img {
+	height: 70px;
+	position: block;
+	position: relative;
+	left: 65px;
+	top: 10px;
 }
 
 .fixed {
@@ -101,7 +107,7 @@ input {
 }
 
 #output {
-	display: inline-block;
+	display: inline;
 	position: absolute;
 	float: right;
 	margin-right: 80px;
