@@ -79,16 +79,27 @@ input {
 }
 
 #container {
+	width: 100%;
 	position: relative;
 	display: inline-block;
-	text-align: center;
 }
 
-.hidden {
-	display: none;
+#button_section {
+	display: inline;
+	position: absolute;
+	float: left;
+	margin-left: 80px;
 }
 
-.button {
+#output {
+	display: inline-block;
+	position: absolute;
+	float: right;
+	margin-right: 80px;
+	margin-left: 300px;
+}
+
+button {
 	position: relative;
 	text-align: center;
 	height: 35px;
@@ -98,7 +109,6 @@ input {
 	display: block;
 	background-color: #FFFFFF;
 	border: 1px solid black;
-	left: 20px;
 }
 
 #morepictures {
