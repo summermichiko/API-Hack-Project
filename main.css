@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#top_section {
+	background-image: url("Images/top_pic_final.jpg");
+	background-position: 57% 24%;
+	height: 300px;
+	margin-bottom: 60px;
+}
+
+#top_section h1 {
+	text-align: center;
+	font-size: 50px;
+	font-family: Josefin Slab;
+	font-weight: 700;
+	padding-top: 100px;
+	padding-bottom: 15px;
+	position: relative;
+	display: block;
+}
+
+input {
+	width: 245px;
+	height: 35px;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Maven Pro;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#container {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.button {
+	position: relative;
+	text-align: center;
+	height: 35px;
+	width: 170px;
+	font-size: 16px;
+	font-family: Maven Pro;
+	display: block;
+	background-color: #FFFFFF;
+	border: 1px solid black;
+	left: 20px;
+}
+
+#morepictures {
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
