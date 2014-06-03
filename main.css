@@ -141,6 +141,8 @@ button {
 	display: block;
 	background-color: #FFFFFF;
 	border: 1px solid black;
+	cursor: pointer;
+	cursor: hand;
 }
 
 #morepictures {
