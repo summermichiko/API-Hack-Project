@@ -26,7 +26,7 @@ $(document).ready(function() {
 					console.log(likes);
 					link = pic.data[i].link;
 					urlsrc = pic.data[i].images.thumbnail.url;
-					$("#output").append("<div id='outputpic'><a target='_blank' href='" + link + "'><div id='stardiv'><div id='likesdiv'></div></div><img src='" + urlsrc + "'></img></div>");
+					$("#output").prepend("<div id='outputpic'><a target='_blank' href='" + link + "'><div id='stardiv'><div id='likesdiv'></div></div><img src='" + urlsrc + "'></img></div>");
 				}
 	        }      // <img src='star-icon.png' class='staricon'>
 	    });
@@ -49,7 +49,7 @@ $(document).ready(function() {
 	var timerId;
 	$("input").keyup(function() {
 		clearTimeout(timerId);
-		timerId = setTimeout(function() {loadInstagramPhotos(); }, 500);
+		timerId = setTimeout(function() {loadInstagramPhotos(); }, 200);
 	});
 });
 
